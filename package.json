@@ -9,7 +9,8 @@
   "contributors": [],
   "license": "MIT",
   "scripts": {
-    "start": "node index.ts",
+    "start": "./node_modules/.bin/ts-node index.ts",
+    "coin-flip": "./node_modules/.bin/ts-node coin-flip.ts",
     "test": "yarn run test",
     "build": "tsc"
   },

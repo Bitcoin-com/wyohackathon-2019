@@ -32,7 +32,6 @@ let main: Function = async (): Promise<void> => {
   //   )
 
   let mnemonic: string = config.mnemonic
-  console.log(mnemonic)
 
   // root seed buffer
   let rootSeed: Buffer = bitbox.Mnemonic.toSeed(mnemonic)
