@@ -1,8 +1,10 @@
 import { BITBOX } from "bitbox-sdk"
 import { AddressUtxoResult } from "bitcoin-com-rest"
+// https://github.com/Bitcoin-com/bitbox-sdk/blob/master/lib/interfaces/vendors.d.ts#L29
 import * as bcl from "bitcoincashjs-lib"
+// https://github.com/Bitcoin-com/bitbox-sdk/blob/master/lib/interfaces/vendors.d.ts#L2
 
-let foobar: Function = async () => {
+let main: Function = async () => {
   let bitbox = new BITBOX({
     restURL: "https://trest.bitcoin.com/v2/"
   })
@@ -10,18 +12,18 @@ let foobar: Function = async () => {
   // for (let i: number = 0; i <= 1000; i++) {
   //   console.log("*******************************")
   // }
-  let langs: string[] = [
-    "english",
-    "chinese_simplified",
-    "chinese_traditional",
-    "korean",
-    "japanese",
-    "french",
-    "italian",
-    "spanish"
-  ]
+  //   let langs: string[] = [
+  //     "english",
+  //     "chinese_simplified",
+  //     "chinese_traditional",
+  //     "korean",
+  //     "japanese",
+  //     "french",
+  //     "italian",
+  //     "spanish"
+  //   ]
 
-  let lang: string = langs[Math.floor(Math.random() * langs.length)]
+  //   let lang: string = langs[Math.floor(Math.random() * langs.length)]
   // create 256 bit BIP39 mnemonic
   //   let mnemonic: string = bitbox.Mnemonic.generate(
   //     256,
@@ -183,4 +185,4 @@ let foobar: Function = async () => {
   // export default App
 }
 
-foobar()
+main()

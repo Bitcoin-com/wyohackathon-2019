@@ -10,6 +10,7 @@ Code for https://wyohackathon.io 2019
 - [CashScript](https://developer.bitcoin.com/cashscript/docs/getting-started)
 - [REST](https://rest.bitcoin.com) and [TREST](https://trest.bitcoin.com)
 - [SLPDB](https://slpdb.bitcoin.com) and [tSLPDB](https://tslpdb.bitcoin.com)
-- [SLPSocket](https://slpsocket.bitcoin.com)
+- [SLPSocket](https://slpsocket.bitcoin.com) and [tSLPSocket](https://tslpsocket.bitcoin.com)
+- [BitSocket](https://bitsocket.bitcoin.com) and [tBitSocket](https://tbitsocket.bitcoin.com)
 - [BitDB](https://bitdb.bitcoin.com) and [tBitDB](https://tbitdb.bitcoin.com)
 - [Testnet tBCH Faucet](https://developer.bitcoin.com/faucets/bch/)
