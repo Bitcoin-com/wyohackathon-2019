@@ -16,6 +16,8 @@
   "dependencies": {
     "@types/node": "^12.7.5",
     "bitbox-sdk": "^8.8.0",
+    "prompt": "^1.0.0",
+    "slp-sdk": "^4.11.0",
     "ts-node": "^8.3.0",
     "typescript": "^3.6.3"
   }

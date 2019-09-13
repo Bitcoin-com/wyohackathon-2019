@@ -4,8 +4,8 @@ import { AddressUtxoResult } from "bitcoin-com-rest"
 import * as bcl from "bitcoincashjs-lib"
 // https://github.com/Bitcoin-com/bitbox-sdk/blob/master/lib/interfaces/vendors.d.ts#L2
 
-let main: Function = async () => {
-  let bitbox = new BITBOX({
+let main: Function = async (): Promise<void> => {
+  let bitbox: BITBOX = new BITBOX({
     restURL: "https://trest.bitcoin.com/v2/"
   })
 
@@ -50,7 +50,7 @@ let main: Function = async () => {
   )
 
   // derive the first external change address HDNode which is going to spend utxo
-  let change: bcl.HDNode = bitbox.HDNode.derivePath(account, "0/0")
+  let change: bcl.HDNode = bitbox.HDNode.derivePath(account, "0/1")
 
   // get the cash address
   let cashAddress: string = bitbox.HDNode.toCashAddress(change)
@@ -58,6 +58,10 @@ let main: Function = async () => {
   // bchtest:qp374ny8hjkwede9msydwxtux2lhj3fesy8zrh98m4
   // https://explorer.bitcoin.com/tbch/address/bchtest:qp374ny8hjkwede9msydwxtux2lhj3fesy8zrh98m4
   // https://explorer.bitcoin.com/tbch/tx/25b402c20fcf345110aa6b64108f2d707382bc85af47c879b31ee4e2d12580ef#o=1
+
+  // get the privkey wif
+  let wif: string = bitbox.HDNode.toWIF(change)
+  console.log(wif)
 
   let result = (await bitbox.Address.utxo(cashAddress)) as AddressUtxoResult
   console.log(result)
