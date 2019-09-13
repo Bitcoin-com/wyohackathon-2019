@@ -3,6 +3,7 @@ import { AddressUtxoResult } from "bitcoin-com-rest"
 // https://github.com/Bitcoin-com/bitbox-sdk/blob/master/lib/interfaces/vendors.d.ts#L29
 import * as bcl from "bitcoincashjs-lib"
 // https://github.com/Bitcoin-com/bitbox-sdk/blob/master/lib/interfaces/vendors.d.ts#L2
+import { config } from "./config"
 
 let main: Function = async (): Promise<void> => {
   let bitbox: BITBOX = new BITBOX({
@@ -30,8 +31,7 @@ let main: Function = async (): Promise<void> => {
   //     bitbox.Mnemonic.wordLists()[lang]
   //   )
 
-  let mnemonic: string =
-    "warfare economy chest million farm liar alone face media riot envelope movie attack corn piece enter outside frown ivory dutch garlic flip omit jewel"
+  let mnemonic: string = config.mnemonic
   console.log(mnemonic)
 
   // root seed buffer

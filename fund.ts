@@ -10,6 +10,7 @@
 import { BITBOX } from "bitbox-sdk"
 import { AddressUtxoResult } from "bitcoin-com-rest"
 import { ECPair, HDNode } from "bitcoincashjs-lib"
+import { config } from "./config"
 
 // consts
 const prompt: any = require("prompt")
@@ -42,9 +43,7 @@ export async function run(): Promise<void> {
         const amount: number = +result.amount
 
         // root seed buffer from mnemonic
-        const rootSeed: Buffer = bitbox.Mnemonic.toSeed(
-          "warfare economy chest million farm liar alone face media riot envelope movie attack corn piece enter outside frown ivory dutch garlic flip omit jewel"
-        )
+        const rootSeed: Buffer = bitbox.Mnemonic.toSeed(config.mnemonic)
 
         // master HDNode
         let masterHDNode: HDNode = bitbox.HDNode.fromSeed(rootSeed, "testnet")
