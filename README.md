@@ -2,6 +2,8 @@
 
 Code for https://wyohackathon.io 2019. This year's theme is 'Gaming on Chain'
 
+[Slides for this presentations](https://docs.google.com/presentation/d/1-aikQf5FH-deNx6834sdY2chYWNpz3ibxBIldcfDcRM/edit?usp=sharing)
+
 ## Getting Started
 
 ### Install dependencies
