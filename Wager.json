@@ -1,0 +1,22 @@
+{
+  "contractName": "Oracle",
+  "constructorInputs": [],
+  "abi": [
+    {
+      "name": "spend",
+      "inputs": []
+    }
+  ],
+  "bytecode": "OP_1 OP_VERIFY OP_1",
+  "source": "contract Oracle() {\n  function spend() {\n    require(true);\n  }\n}",
+  "networks": {
+    "testnet": {
+      "bchtest:pqtnwjwts7ynmu5ledyqkjyr8st6dzaz0ca28gg4s2": "OP_1 OP_VERIFY OP_1"
+    }
+  },
+  "compiler": {
+    "name": "cashc",
+    "version": "v0.1.0-beta.1"
+  },
+  "updatedAt": "2019-09-13T22:30:54.241Z"
+}

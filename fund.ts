@@ -51,7 +51,7 @@ export async function run(): Promise<void> {
         // HDNode of BIP44 account
         let account: HDNode = bitbox.HDNode.derivePath(
           masterHDNode,
-          "m/44'/145'/0'"
+          "m/44'/145'/1'"
         )
 
         // derive the first external change address HDNode which is going to spend utxo
@@ -113,17 +113,17 @@ export async function run(): Promise<void> {
 
         // output rawhex
         let hex: string = tx.toHex()
-        console.log(hex)
+        // console.log(hex)
 
         // sendRawTransaction to running BCH node
-        // let success: string = await bitbox.RawTransactions.sendRawTransaction(
-        //   hex
-        // )
+        let success: string = await bitbox.RawTransactions.sendRawTransaction(
+          hex
+        )
 
-        // // success!
-        // console.log(
-        //   `success: https://explorer.bitcoin.com/tbch/tx/${success}#o=1`
-        // )
+        // success!
+        console.log(
+          `success: https://explorer.bitcoin.com/tbch/tx/${success}#o=1`
+        )
       }
     )
   } catch (error) {

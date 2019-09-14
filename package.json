@@ -11,12 +11,14 @@
   "scripts": {
     "start": "./node_modules/.bin/ts-node index.ts",
     "coin-flip": "./node_modules/.bin/ts-node coin-flip.ts",
+    "fund": "./node_modules/.bin/ts-node fund.ts",
     "test": "yarn run test",
     "build": "tsc"
   },
   "dependencies": {
     "@types/node": "^12.7.5",
     "bitbox-sdk": "^8.8.0",
+    "cashscript": "0.1.1-beta",
     "prompt": "^1.0.0",
     "slp-sdk": "^4.11.0",
     "ts-node": "^8.3.0",
