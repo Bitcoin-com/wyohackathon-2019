@@ -11,7 +11,7 @@ Code for https://wyohackathon.io 2019. This year's theme is 'Gaming on Chain'
 - [NodeJS LTS](https://nodejs.org/en) which is 10.16.3 atm
 - [yarn](https://yarnpkg.com/lang/en/)
 - [Visual Studio Code](https://code.visualstudio.com) + vim bindings
-- [iTerm3 Terminal](https://www.iterm2.com/version3.html)
+- [iTerm3 Terminal](https://www.iterm2.com/version3.html) \*\*[actual download link](https://iterm2.com/downloads/stable/latest)\*\*
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Github](https://github.com/Bitcoin-com/)
 
@@ -21,11 +21,15 @@ Next using `yarn` install the following
 yarn add bitbox-cli --global
 ```
 
+### Code Samples
+
+You can follow along by either cloning the following repo:
+
 ```
 git clone https://github.com/Bitcoin-com/wyohackathon-2019.git
 ```
 
-Or fork [this repo on github](https://github.com/Bitcoin-com/wyohackathon-2019.git)
+or forking [this repo on github](https://github.com/Bitcoin-com/wyohackathon-2019.git).
 
 ## Resources
 
