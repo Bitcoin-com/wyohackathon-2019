@@ -9,11 +9,23 @@ Code for https://wyohackathon.io 2019. This year's theme is 'Gaming on Chain'
 ### Install dependencies
 
 - [NodeJS LTS](https://nodejs.org/en) which is 10.16.3 atm
-- [yarn](https://yarnpkg.com/lang/en/) or [npm](npmjs.com)
+- [yarn](https://yarnpkg.com/lang/en/)
 - [Visual Studio Code](https://code.visualstudio.com) + vim bindings
 - [iTerm3 Terminal](https://www.iterm2.com/version3.html)
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Github](https://github.com/Bitcoin-com/)
+
+Next using `yarn` install the following
+
+```
+yarn add bitbox-cli --global
+```
+
+```
+git clone https://github.com/Bitcoin-com/wyohackathon-2019.git
+```
+
+Or fork [this repo on github](https://github.com/Bitcoin-com/wyohackathon-2019.git)
 
 ## Resources
 
