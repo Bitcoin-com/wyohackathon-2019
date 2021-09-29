@@ -598,7 +598,7 @@ bitcoincash-ops@Bitcoin-com/bitcoincash-ops#2.0.0:
   version "2.0.0"
   resolved "https://codeload.github.com/Bitcoin-com/bitcoincash-ops/tar.gz/6ab82cc7326c67236f3b2d9d0457258ac2ef48e3"
 
-bitcoincashjs-lib@Bitcoin-com/bitcoincashjs-lib#v4.0.1, "bitcoincashjs-lib@github:Bitcoin-com/bitcoincashjs-lib#v4.0.1":
+bitcoincashjs-lib@Bitcoin-com/bitcoincashjs-lib#v4.0.1:
   version "4.0.1"
   resolved "https://codeload.github.com/Bitcoin-com/bitcoincashjs-lib/tar.gz/28447b40a4ccd23913f7ade6589dc7214c99e60a"
   dependencies:
@@ -1694,9 +1694,9 @@ hosted-git-info@^2.1.4:
   integrity sha512-pzXIvANXEFrc5oFFXRMkbLPQ2rXRoDERwDLyrcUxGhaZhgP54BBSl9Oheh7Vv0T090cszWBxPjkQQ5Sq1PbBRQ==
 
 i@0.3.x:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/i/-/i-0.3.6.tgz#d96c92732076f072711b6b10fd7d4f65ad8ee23d"
-  integrity sha1-2WyScyB28HJxG2sQ/X1PZa2O4j0=
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/i/-/i-0.3.7.tgz#2a7437a923d59c14b17243dc63a549af24d85799"
+  integrity sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==
 
 iconv-lite@^0.4.17:
   version "0.4.24"
